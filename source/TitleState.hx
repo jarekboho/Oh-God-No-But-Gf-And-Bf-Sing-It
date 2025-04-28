@@ -23,6 +23,7 @@ import flixel.util.FlxTimer;
 import io.newgrounds.NG;
 import lime.app.Application;
 import openfl.Assets;
+import Controls.KeyboardScheme;
 
 #if desktop
 import Discord.DiscordClient;
@@ -86,6 +87,11 @@ class TitleState extends MusicBeatState
 			transOut = FlxTransitionableState.defaultTransOut;
 
 		FlxG.mouse.visible = false;
+
+		if (FlxG.save.data.dfjk)
+			controls.setKeyboardScheme(KeyboardScheme.Solo, true);
+		else
+			controls.setKeyboardScheme(KeyboardScheme.Duo(true), true);
 
 		PlayState.SONG = Song.loadFromJson('oh-god-no', 'oh-god-no');
 		LoadingState.loadAndSwitchState(new PlayState());
