@@ -19,6 +19,7 @@ class HealthIcon extends FlxSprite
 		animation.add('girlfriend', [4, 5], 0, false, isPlayer);
 		animation.add('girlfriend-car', [4, 5], 0, false, isPlayer);
 		animation.add('demongf', [6, 7], 0, false, isPlayer);
+		animation.add('dad', [8, 9], 0, false, isPlayer);
 		animation.play(char);
 		scrollFactor.set();
 	}
@@ -34,6 +35,7 @@ class HealthIcon extends FlxSprite
 		animation.add('girlfriend', [4, 5], 0, false, isPlayer);
 		animation.add('girlfriend-car', [4, 5], 0, false, isPlayer);
 		animation.add('demongf', [6, 7], 0, false, isPlayer);
+		animation.add('dad', [8, 9], 0, false, isPlayer);
 		animation.play(char);
 		scrollFactor.set();
 	}
