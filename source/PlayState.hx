@@ -2494,9 +2494,6 @@ class PlayState extends MusicBeatState
 
 	}
 
-	var lightningStrikeBeat:Int = 0;
-	var lightningOffset:Int = 8;
-
 	override function beatHit()
 	{
 		super.beatHit();
@@ -2555,8 +2552,6 @@ class PlayState extends MusicBeatState
 		}
 		}
 	}
-
-	var curLight:Int = 0;
 
 	function changeDadCharacter(id:String)
 	{				
