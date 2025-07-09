@@ -948,6 +948,11 @@ class PlayState extends MusicBeatState
 		}
 	}
 
+	function tweenCamIn():Void
+	{
+		FlxTween.tween(FlxG.camera, {zoom: 1.3}, (Conductor.stepCrochet * 4 / 1000), {ease: FlxEase.elasticInOut});
+	}
+
 	override function openSubState(SubState:FlxSubState)
 	{
 		if (paused)
@@ -2472,14 +2477,8 @@ class PlayState extends MusicBeatState
 		strumLineNotes.members[3].visible = false;
 		}
 
-		if (curStep == 1221)
-		{
-			//changeDadCharacter("demongf");
-		}
-
 		if (curStep == 1380)
 		{
-			changeDadCharacter("demongf");
 		FlxTween.tween(blackBarThingie, {alpha: 1}, 1);
 		FlxTween.tween(camHUD, {alpha: 0}, 1);
 		}
