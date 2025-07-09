@@ -347,14 +347,6 @@ class Character extends FlxSprite
 						else
 							playAnim('danceLeft');
 					}
-
-				case 'spooky':
-					danced = !danced;
-
-					if (danced)
-						playAnim('danceRight');
-					else
-						playAnim('danceLeft');
 				default:
 					playAnim('idle');
 			}
